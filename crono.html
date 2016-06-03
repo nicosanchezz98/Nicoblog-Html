@@ -1,0 +1,281 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+               <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all"/> 
+             <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/> 
+     <title>NicoBlog</title>
+    <link rel="icon" href="https://i.vimeocdn.com/portrait/2338125_300x300.jpg"type=".png"/>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="MDicons/css/MDicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/themes/default/default-nivo-theme.css" type="text/css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet">
+
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+    
+ 
+        
+        
+    </head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
+<!-- Fixed navbar -->
+<div class="navbar main-menu navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html" title="NicoBlog"><img src="images/logo2.png" alt="logo" title="NicoBlog" /></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right" id="menu">
+        <li><a data-scroll data-options="easing: easeOutQuart" href="index.html">Home</a></li>
+        <li><a data-scroll data-options="easing: easeOutQuart" href="index.html#mywork">Mi trabajo</a></li>
+        <li><a data-scroll data-options="easing: easeOutQuart" href="index.html#about">Historia</a></li>
+        <li><a data-scroll data-options="easing: easeOutQuart" href="index.html#skills">Curriculum</a></li>
+        <li><a data-scroll data-options="easing: easeOutQuart" href="index.html#contact">Contacto</a></li>
+          <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+      Ejercicios <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu" role="menu">
+    <li><a href="calculadora.html">Calculadora</a></li>
+    <li><a href="cambio.html">Cambio de moneda</a></li>
+    <li><a href="galeria.html">Galeria de imagenes</a></li>
+    <li><a href="crono.html">Cronometro</a></li>
+    <li><a href="sorteo.html">Sorteo</a></li>
+    <li><a href="ubicacion.html">Ubicacion</a></li>
+
+
+    </ul>
+  </li>
+      </ul>
+   
+        
+    </div>
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<section id="banner" class="section">
+	<div class="container">
+    	<div class="intro">
+         		<h1 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s"><i class="fa fa-clock-o fa-4x"></i></span></h1>
+        <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="1.0s">This is <strong>Nico</strong>Blog</h2>
+        <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="1.2s">Cronometro</p>
+        </div>
+        <div class="clearfix"></div>
+	</div>
+    	 <!-- Carousel -->
+</section>
+
+<section id="aboutt">
+	<div class="container">
+        <div class="row">
+      
+            
+            
+              <div class="cron">
+                        <div id="reloj">
+                                <div class="col-md-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
+
+                            <h3>00 : 00 : 00</h3>
+                            <span class="line" id="liniat"></span>
+                            <br>
+                        </div>
+                                                    </div>
+
+                        <div id="orden">
+
+                            <div id="continuar" style="
+                                                       display: inline-block;
+                                                       ">
+                                <a type="button" class="btn main-btn pull-center wow bounceIn animated" data-wow-duration="1s" data-wow-delay="1s" id="pausa" onclick="continuar()" value="Pausa" style="visibility: visible; -webkit-animation: bounceIn 1s 1s;">
+                                    <i class="fa fa-play fa-2x"></i></a></div>
+                            <div id="btnStop_Reset" style="
+                                                           display: inline-block;
+                                                           ">
+
+                                <a type="button" class="btn main-btn pull-center wow bounceIn animated" data-wow-duration="1s" data-wow-delay="1s" id="stop" onclick="parar()" value="Stop" style="visibility: visible; -webkit-animation: bounceIn 1s 1s;">
+                                    <i class="fa fa-stop fa-2x"></i></a>
+                                <a type="button" class="btn main-btn pull-center wow bounceIn animated" data-wow-duration="1s" data-wow-delay="1s" id="vuelta" onclick="vuelta()" value="Vuelta" style="visibility: visible; -webkit-animation: bounceIn 1s 1s;">
+                                    <i class="fa fa-circle-o-notch fa-2x"></i></a>
+                            </div>
+                        </div>      
+
+                        <div id="vueltas">
+                        </div>
+                    </div>   
+            
+
+            
+            
+            
+            
+            
+        </div>
+    </div>
+</section>
+
+
+
+<section id="info">
+	<div class="container">
+		<div class="row">
+        	<div class="col-md-4">
+            		<h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">Ubicacion</h4>
+                    <address class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">
+                  		<strong>Instituto Tecnico Salesiano Villada</strong><br>
+                		</address>
+                        <address class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">
+                  
+                  <a href="mailto:#">nicosanchezz98@gmail.com</a>
+                </address>
+            </div>
+            <div class="col-md-4">
+            	<h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">Redes Sociales</h4>
+                <div class="clearfix"></div>
+                <ul class="list-inline social">
+                          <li class="wow bounceIn" data-wow-duration="1.0s" data-wow-delay="0.8s"><a href="https://www.facebook.com/BillGates?fref=ts" class="fb"><i class="mdicon facebook"></i></a></li>
+                          <li class="wow bounceIn" data-wow-duration="1.0s" data-wow-delay="1.0s"><a href="https://twitter.com/billgates" class="twt"><i class="mdicon twitter"></i></a></li>
+                          <li class="wow bounceIn" data-wow-duration="1.0s" data-wow-delay="1.2s"><a href="https://plus.google.com/111817724638728999087/posts" class="dr"><i class="mdicon google-plus-fill"></i></a></li>
+                          
+                        </ul>
+            </div>
+            <div class="col-md-4">
+            	<h4 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">Sobre NicoBlog</h4>
+                <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet turpis ac tincidunt vehicula. Integer ac dui aliquet, consequat tellus at, varius risus. Sed libero.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<a href="#" class="back-to-top"><i class="mdicon up"></i></a>
+
+    <!-- Bootstrap core JavaScript
+        ================================================== --> 
+    <!-- Placed at the end of the document so the pages load faster --> 
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
+    <!-- smooth scrolling -->
+    <script src="js/smooth-scroll.js"></script>
+    
+    <!-- animation scrolling -->
+    <script src="js/wow.min.js"></script>
+    
+    <!-- hover captions -->
+    <script src="js/jquery.hcaptions.js"></script>
+    
+    <!-- hover detail page -->
+    <script src="js/nivo-lightbox.min.js"></script>
+    
+    <!-- Form Validation -->
+    <script src="js/bootstrapValidator.min.js"></script>
+    
+    <!-- animation scrolling -->
+    <script src="js/app.min.js"></script>
+    
+    
+ 
+    
+</body>
+</html>
+<script type="text/javascript">
+            var reloj=document.getElementById("reloj");
+            var marcha=0;
+            var cro=0;
+            var iniciado=0;
+
+            function tiempo() {
+                actual=new Date(); 
+                cro=actual-emp;
+                cr=new Date();
+                cr.setTime(cro); 
+                centesimas=cr.getMilliseconds();
+                centesimas=centesimas/10;
+                centesimas=Math.round(centesimas)
+                segundos=cr.getSeconds();
+                minutos=cr.getMinutes();
+                if (centesimas<10) {centesimas="0"+centesimas;} 
+                if (segundos<10) {segundos="0"+segundos;} 
+                if (minutos<10) {minutos="0"+minutos;} 
+                reloj.innerHTML='<h3>'+minutos+" : "+segundos+" : "+centesimas+'</h3>';
+            }
+
+            function parar() { 
+                if (marcha==1) {
+                    clearInterval(elcrono);
+                    marcha=0;
+                    iniciado=0;
+                    document.getElementById("continuar").innerHTML = '<a type="button" class="btn main-btn pull-center wow bounceIn" data-wow-duration="0s" data-wow-delay="0s" id=empezar onclick=continuar() value=Start><i class="fa fa-play fa-2x"></i></a>';
+                    $("#vueltas").append("<hr/>");
+                }
+
+            }
+
+
+            function parar1() { 
+                if (marcha==1) {
+                    clearInterval(elcrono);
+                    marcha=0;
+                    document.getElementById("continuar").innerHTML = '<a type="button" class="btn main-btn pull-center wow bounceIn" data-wow-duration="0s" data-wow-delay="0s" id=empezar onclick=continuar() value=Start><i class="fa fa-play fa-2x"></i></a>';
+                }
+            }
+
+            function vuelta(){
+                var vuelta = document.getElementById("reloj").innerHTML;
+                var vueltas = document.getElementById("vueltas");
+                var h3 = document.createElement("h3");
+                h3.innerHTML = vuelta;
+                vueltas.appendChild(h3);
+
+            }
+
+            function continuar() {
+                if (iniciado==0){
+                    if (marcha==0) {
+                        emp=new Date();
+                        elcrono=setInterval(tiempo,10); 
+                        marcha=1;
+                        iniciado=1;
+                        document.getElementById("continuar").innerHTML = '<a type="button" class="btn main-btn pull-center wow bounceIn" data-wow-duration="0s" data-wow-delay="0s" id=empezar onclick=parar1() value=Start><i class="fa fa-pause fa-2x"></i></a>';
+                    }
+                }
+                if (marcha==0) { 
+                    emp2=new Date();
+                    emp2=emp2.getTime();
+                    emp3=emp2-cro;
+                    emp=new Date();
+                    emp.setTime(emp3);
+                    elcrono=setInterval(tiempo,10);
+                    marcha=1;
+                    document.getElementById("continuar").innerHTML = '<a type="button" class="btn main-btn pull-center wow bounceIn" data-wow-duration="0s" data-wow-delay="0s" id=pausa onclick=parar1() value=Pausa><i class="fa fa-pause fa-2x"></i></a>';
+                }		
+            }
+
+            function reiniciar() {
+                if (marcha==1) { 
+                    clearInterval(elcrono); 
+                    marcha=0;
+                }
+                cro=0;
+                reloj.innerHTML = "00 : 00 : 00";
+                document.getElementById("btnPlay_Restart").innerHTML = '<input type="button" id=empezar onclick=iniciar() value=Start />';
+            }	
+        </script>
